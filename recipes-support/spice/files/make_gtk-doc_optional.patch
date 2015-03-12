@@ -1,0 +1,13 @@
+Index: b/doc/reference/Makefile.am
+===================================================================
+--- a/doc/reference/Makefile.am
++++ b/doc/reference/Makefile.am
+@@ -57,7 +57,7 @@ IGNORE_HFILES=					\
+ GTKDOC_CFLAGS = -I$(top_srcdir) -I$(top_builddir) -I$(top_srcdir)/gtk -I$(top_builddir)/gtk $(SPICE_GLIB_CFLAGS) $(SPICE_GTK_CFLAGS) $(COMMON_CFLAGS)
+ GTKDOC_LIBS = $(top_builddir)/gtk/libspice-client-glib-2.0.la $(top_builddir)/gtk/libspice-client-gtk-$(SPICE_GTK_API_VERSION).la
+ 
+-include $(top_srcdir)/gtk-doc.make
++-include $(top_srcdir)/gtk-doc.make
+ 
+ # Comment this out if you want 'make check' to test you doc status
+ # and run some sanity checks
